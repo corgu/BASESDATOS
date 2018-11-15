@@ -25,7 +25,8 @@ select now();
  -- mostrar descripcion tabla
  describe nombretabla;
  -- crear tabla
- create table nombretabla(nombrecampo tipodato(20), etc);
+ create table nombretabla(nombrecampo char(20));-- he puesto char por ejemplo
  -- insertar datos para rellenar la tabla
  insert into nombretabla
- ->values (rellenar datos entre comillas, separados por comas);
+ values ('rellenar datos entre comillas', 'separados por comas');
+ -- ejemplo:create table extraescolares(lunes varchar(17),martes int, miercoles decimal(13,2),jueves double, viernes float, sabado char(1),domingo smallint,extras tinyint);
