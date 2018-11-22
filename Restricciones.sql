@@ -37,3 +37,41 @@ truncate table nombretabla;
 select*from nombretabla where nombrecampo is null;
 -- Muestra que registro es = a un registro
 select*from nombretabla where nombrecampo=dato;
+-- para que no acepte valores nulos poniendo not null
+CREATE TABLE coral2(
+codigo INT auto_increment,
+nombre varchar(20) NOT NULL,
+direccion varchar (50),
+pago float,
+primary key(codigo));
+-- ejemplo para no permitir que existan numeros negativos UNSIGNED en numeros enteros
+create table campos( 
+codigo int unsigned, 
+edad bigint unsigned, 
+goles smallint unsigned, 
+faltas bigint unsigned, 
+jugadores tinyint unsigned);
+-- ejemplo de diferentes tipos de fechas
+create table fechas( 
+actual date NOT NULL,
+ final timestamp NOT NULL,
+ cierre time NOT NULL, 
+ apertura datetime NOT NULL,
+ inauguracion year NOT NULL, 
+ fundacion year(4) NOT NULL);
+-- usar default por defecto
+create table farmacia(
+codigo int default 123, 
+fecha date default '2018-11-13', 
+empleados smallint default 7, 
+gerente char(1) default 'N' , 
+calle varchar(20) default 'poligono');
+-- zerofill sirve para que si no cubres el cupo de 6(en este caso), te lo rellena con 6
+create table ventas(
+codigo int(6) zerofill auto_increment,
+cod_empleado varchar(40) not null,
+cod_producto varchar (30),
+precio decimal (5,2) unsigned,
+cantidad smallint zerofill,
+fecha_hora datetime,
+primary key(codigo));
