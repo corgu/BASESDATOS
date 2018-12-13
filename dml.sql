@@ -43,4 +43,4 @@
  values ('rellenar datos entre comillas', 'separados por comas');
  -- ejemplo:create table extraescolares(lunes varchar(17),martes int, miercoles decimal(13,2),jueves double, viernes float, sabado char(1),domingo smallint,extras tinyint);
 -- decir cual es la clave primaria
-PRIMARY KEY (nombrecampo)
+PRIMARY KEY (nombrecampo)shoestadisticas

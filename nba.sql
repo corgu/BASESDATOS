@@ -1,3 +1,5 @@
+/*antes de nada poner*/
+sudo mysql -u root -p
 /*importar archivos al terminal*/
 mysql -h -root -p nombrequequieresponerle<ejemplo: fichero.sql>
 /*ver registros de la tabla*/
