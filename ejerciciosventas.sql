@@ -1,43 +1,6 @@
 -- Nueva base de datos: jardineria
 1. Nombre, apellidos y email de los empleados a cargo de Alberto Soria
 
-select CodigoEmpleado, nombre from Empleados;
-+----------------+-----------------+
-| CodigoEmpleado | nombre          |
-+----------------+-----------------+
-|              1 | Marcos          |
-|              2 | Ruben           |
-|              3 | Alberto         |
-|              4 | Maria           |
-|              5 | Felipe          |
-|              6 | Juan Carlos     |
-|              7 | Carlos          |
-|              8 | Mariano         |
-|              9 | Lucio           |
-|             10 | Hilario         |
-|             11 | Emmanuel        |
-|             12 | José Manuel     |
-|             13 | David           |
-|             14 | Oscar           |
-|             15 | Francois        |
-|             16 | Lionel          |
-|             17 | Laurent         |
-|             18 | Michael         |
-|             19 | Walter Santiago |
-|             20 | Hilary          |
-|             21 | Marcus          |
-|             22 | Lorena          |
-|             23 | Nei             |
-|             24 | Narumi          |
-|             25 | Takuma          |
-|             26 | Amy             |
-|             27 | Larry           |
-|             28 | John            |
-|             29 | Kevin           |
-|             30 | Julian          |
-|             31 | Mariko          |
-+----------------+-----------------+
-
 select Nombre, Apellido1, Apellido2, Email from Empleados where CodigoJefe = 3;
 +-------------+------------+-----------+---------------------------+
 | Nombre      | Apellido1  | Apellido2 | Email                     |
