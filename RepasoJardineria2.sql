@@ -21,7 +21,7 @@
    delete from Clientes where min(LimiteCredito);
    
    ERROR 1111 (HY000): Invalid use of group function
-(Aparece error porque el programa intenta conservar la integridad diferencial)
+(Aparece error porque el programa intenta conservar la integridad referencial)
 
 5. Inserta dos clientes nuevos para un empleado cualquiera que sea representante de ventas. A continuación inserta mediante transacciones un pedido que tenga al menos 3 líneas de detalle.
 
